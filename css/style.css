@@ -42,8 +42,7 @@ ul{
     min-height: 100vh;
     display: block;
     opacity: 1;
-    padding: 0 30px;
-
+    padding: 5px;
 
 }
 .main-content{
@@ -181,7 +180,7 @@ ul{
     left: 300px;
     top: 20px;
     border-radius: 5px;
-    background: var(--bg-black-100);
+    background: var(--bg-black-50);
     display: none;
     align-items: center;
     justify-content: center;
@@ -561,7 +560,63 @@ section.quote{
     padding: 100px;
     text-align: center;
 }
+.map{
+    size: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+footer{
+    background-color: var(--bg-black-900);
+    text-align: center;
+    padding: 1rem 0;
+}
+footer .social{
+    padding: 1rem 0;
+}
+footer .socials a:hover,footer .links a:hover{
+    color: blueviolet
+}
+footer .links a{
+    color: var(--text-black-700);
+    padding: 1rem 1rem;
+    margin: auto;
+ }
+ footer .credit a{
+    color: rgb(red, green, blue);
+    font-weight: 700;
+ }
+ .credit p{
+    color: var(--text-black-700);
+ }
+ .bubbles{
+    position: relative;
+    display: flex;
+ }
+ .bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(100s / var(--i));
+ }
+ .bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #4fc3dc44 , 0 0 50px #ff2d75, 0 0 100% #ff2d75;
 
+
+ }
+ @keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10px) scale(1);
+    }
+ }
 @media (max-width:1199px)
 {
     .aside{
